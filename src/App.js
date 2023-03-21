@@ -6,10 +6,9 @@ import './App.css';
 
 const App = () => {
   const [courseGoals, setCourseGoals] = useState([
-    { text: 'Do all exercises!', id: 'g1' },
-    { text: 'Finish the course!', id: 'g2' }
+    { text: "Do all exercises!", id: "g1" },
+    { text: "Finish the course!", id: "g2" },
   ]);
-  // commit 잘됨?
 
   const addGoalHandler = enteredText => {
     setCourseGoals(prevGoals => {
@@ -37,14 +36,12 @@ const App = () => {
   }
 
   return (
-
+    <>
       <section id="goal-form">
         <CourseInput onAddGoal={addGoalHandler} />
       </section>
-      <section id="goals">
-        {content}
-      </section>
-
+      <section id="goals">{content}</section>
+    </>
   );
 };
 
