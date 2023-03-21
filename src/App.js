@@ -9,7 +9,7 @@ const App = () => {
     { text: 'Do all exercises!', id: 'g1' },
     { text: 'Finish the course!', id: 'g2' }
   ]);
-  // commit
+  // commit 잘됨?
 
   const addGoalHandler = enteredText => {
     setCourseGoals(prevGoals => {
